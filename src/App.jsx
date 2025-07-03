@@ -7,8 +7,7 @@ function App() {
   const calculadora = useCalculadora();
 
   return (
-    <div className="calculadora">
-      <Display historico={calculadora.historico} display={calculadora.display} />
+    <div className="calculadora">     <Display historico={calculadora.historico} display={calculadora.display} />
       <Teclado
         handlePorcentagem={calculadora.handlePorcentagem}
         handleClear={calculadora.handleClear}
