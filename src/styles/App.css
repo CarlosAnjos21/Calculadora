@@ -1,102 +1,19 @@
-:root {
-  color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(130deg, #3e17ff, #f46d6d);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
+
+@theme {
+  --color-calc-dark: #121212;
+  --color-calc-display: #1a1a1a;
+  --color-btn-num: #222222;
+  --color-btn-igual: #f8b500;
+  --color-btn-default: #2d2d2d;
+  --color-btn-hover: #3d3d3d;
+  --color-btn-active: #f8b500;
+  
+  --background-image-calc-grad: radial-gradient(circle at center, #2e10c1, #000000);
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 150px;      /* distância do topo */
-  margin: 0;
-  font-family: Arial, sans-serif;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-.calculadora {
-  width: 460px;
-  background: #1e1e1e;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-.historico {
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: right;
-  margin-bottom: 10px;
-}
-
-.display {
-  height: 50px;
-  font-size: 2rem;
-  padding: 10px;
-  background: #333;
-  border-radius: 8px;
-  margin-bottom: 5px;
-  text-align: right;
-}
-
-.linha {
-  display: flex;
-  margin-bottom: 1px;
-}
-
-.linha button {
-  flex: 1;
-  margin: 2px;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #444;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  height: 65px;
-  border: none;
-}
-
-.linha button:hover {
-  border-color: #2d38b0;
-  background-color: #05002d;
-}
-
-.linha button:active {
-  border-color: rgb(30, 156, 30);
-  background-color: #00380a;
-}
-
-.linha button.numero {
-  background-color: #2a2f62;
-}
-
-.linha button.numero:hover {
-  border-color: #2d38b0;
-  background-color: #05002d;
-}
-
-.linha button.numero:active {
-  border-color: rgb(30, 156, 30);
-  background-color: #00380a;
-}
-
-.linha button.igual {
-  background-color: #bd8a2b;
-}
-
-.linha button.igual:hover {
-  border-color: #9a6c18;
-  background-color: #5b370a;
-}
-
-.linha button.igual:active {
-  border-color: rgb(30, 156, 30);
-  background-color: #002506;
+@layer base {
+  body {
+    @apply bg-calc-grad min-h-screen font-sans antialiased text-slate-50;
+  }
 }
