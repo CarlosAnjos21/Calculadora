@@ -1,5 +1,7 @@
 🧮 Reactive Calculator Engine
 
+🔗 Live Demo: https://carlosanjos21.github.io/Calculadora/
+
 Calculadora moderna desenvolvida com foco em Clean Code e Separation of Concerns (SoC).  
 O projeto explora o estado da arte do ecossistema React, isolando a lógica de negócio em hooks customizados e utilizando a nova engine CSS-first do Tailwind v4.
 
@@ -10,7 +12,7 @@ O projeto explora o estado da arte do ecossistema React, isolando a lógica de n
 - Normalização de Input: Suporte a padrões decimais brasileiros (`,`) com conversão interna para operações JavaScript (`.`).
 
 🛠️ Tech Stack
-- Core: React 18 + Vite
+- Core: React 19 + Vite
 - Styling: Tailwind CSS v4 (CSS-first configuration)
 - Logic: Custom Hooks & Composition Pattern
 
